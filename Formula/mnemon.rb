@@ -5,21 +5,21 @@
 class Mnemon < Formula
   desc "Persistent memory for LLM agents"
   homepage "https://github.com/mnemon-dev/mnemon"
-  version "0.1.13"
+  version "0.1.14"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mnemon-dev/mnemon/releases/download/v0.1.13/mnemon_0.1.13_darwin_amd64.tar.gz"
-      sha256 "34a9f0a65d134d3032d20664fdff77e8aa74c4b54659d7bc0f06c5ef5129b2bb"
+      url "https://github.com/mnemon-dev/mnemon/releases/download/v0.1.14/mnemon_0.1.14_darwin_amd64.tar.gz"
+      sha256 "bc74f3f6cbee9ac1fbfc9fe780dbd02f0a7f02334396970a024d2cfa07090c2b"
 
       define_method(:install) do
         bin.install "mnemon"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mnemon-dev/mnemon/releases/download/v0.1.13/mnemon_0.1.13_darwin_arm64.tar.gz"
-      sha256 "0fedd3c07a7173c5b19af1718dfb4750f9aae436caaf5eacd39768049de1ed5c"
+      url "https://github.com/mnemon-dev/mnemon/releases/download/v0.1.14/mnemon_0.1.14_darwin_arm64.tar.gz"
+      sha256 "1911ecdc59dd9480afee6c4372234ccf58bb6444320b50e44721a77773b81c39"
 
       define_method(:install) do
         bin.install "mnemon"
@@ -29,15 +29,15 @@ class Mnemon < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mnemon-dev/mnemon/releases/download/v0.1.13/mnemon_0.1.13_linux_amd64.tar.gz"
-      sha256 "75f5296fbbbbed5945ad1c21eb30aee13763cd59f649a2aa08761469b11947cb"
+      url "https://github.com/mnemon-dev/mnemon/releases/download/v0.1.14/mnemon_0.1.14_linux_amd64.tar.gz"
+      sha256 "8b0bc856c8c1078de85d55d9f1e5f8d180082fb85f7cae82f65ee638a8293810"
       define_method(:install) do
         bin.install "mnemon"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mnemon-dev/mnemon/releases/download/v0.1.13/mnemon_0.1.13_linux_arm64.tar.gz"
-      sha256 "a8a760fc691d05094d025202fba6ac402cc62a8d04502d8af2b7b1720bbee751"
+      url "https://github.com/mnemon-dev/mnemon/releases/download/v0.1.14/mnemon_0.1.14_linux_arm64.tar.gz"
+      sha256 "0ce22ae86cfd4d018cc79c30ffeb620e79f3a630e31d9c4ac4a399cd3806bb33"
       define_method(:install) do
         bin.install "mnemon"
       end
