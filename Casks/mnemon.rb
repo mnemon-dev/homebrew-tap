@@ -6,25 +6,25 @@ cask "mnemon" do
     end
   end
 
-  version "0.2.10"
+  version "0.2.11"
 
   on_macos do
     on_arm do
-      sha256 "184be0ca8368e4d8b1929113314e76fa1d18d8b2e9ef475fb154e819ae48bcd9"
+      sha256 "7692c81ebd5eb25bfc87f57a2b9d9b9be76204fc7808e9e4a0716fe728c7eff0"
       url "https://github.com/mnemon-dev/mnemon/releases/download/v#{version}/mnemon_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b3a887145969b7a4ce6e69d12eaa3239a199044a94239f70df673c04bdaa8230"
+      sha256 "f65a7b14b2332dc183a84669466c346ecdfbda7d3c92bb3912e1610dc0da47b1"
       url "https://github.com/mnemon-dev/mnemon/releases/download/v#{version}/mnemon_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "1d3180d6cd111068509b8d68cd666ca2210f0b43467980e2a96c60af1a7f6136"
+      sha256 "c87e69021cd58f0ebd9e036f34dbcd4672bcc02e75524030a3acda873fc4e33c"
       url "https://github.com/mnemon-dev/mnemon/releases/download/v#{version}/mnemon_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "4ce6a34e0cfc0183f6b6ae349a80b042a5b387903a799cf124cfedea540cd155"
+      sha256 "84ff8fc1a9bf34425fcdfd2b2333a250e30f4e60cc61dd78899c9471e3af5684"
       url "https://github.com/mnemon-dev/mnemon/releases/download/v#{version}/mnemon_#{version}_linux_amd64.tar.gz"
     end
   end
